@@ -1,4 +1,4 @@
-function checkPermissionWebView(item) {
+function checkPermission(item) {
     const isUIWebview = /(iPhone|iPod|iPad).*AppleWebKit(?!state.*Safari)/i.test(navigator.userAgent);
     if (typeof navigator.userAgent !== undefined && /android/i.test(navigator.userAgent)) {
       return Android.checkPermissionWebView(item);
